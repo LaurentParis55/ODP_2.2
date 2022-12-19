@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+     <!-- CDN of FONT AWSOME -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../odp2.2_Styles.css">
+    <title> odp_Tarifs</title>
+    <style>
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #333;
+}
+
+.container {
+    width: 700px;
+    height: 630px;
+    /* background: #f1f1f1; */
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+}
+.bloc {
+    height: 70px;
+    margin: 5px;
+    border-radius: 25px;
+    background-image: repeating-linear-gradient(135deg, rgba(189,189,189,0.1) 0px, rgba(189,189,189,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+    flex-grow: 1;
+    transition: flex-grow 0.4s ease-out;
+    position: relative;
+    overflow: hidden;
+}
+
+img.pastille{object-fit: cover;
+    width:42px;
+    height: 41px;
+    border:1px solid;
+    border-radius: 50%;
+}
+
+
+
+
+
+.active {
+    flex-grow: 10000;
+}
+.bloc * {
+    pointer-events: none;
+}
+.bloc-haut {
+    height: 70px;
+    /* background: #000; */
+    display: flex;
+    align-items: center;
+}
+.rond {
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.rond img {
+    width: 40px;
+}
+.bloc .ligne {
+    width: 60%;
+    height: 1px;
+    border-radius: 2px;
+    background: #222;
+    margin: 0 5px 0 auto;
+}
+.titre-section {
+    margin: 0 25px;
+    font-size: 30px;
+}
+.prix {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    margin: 0 18px 0 10px;
+    font-weight: bold;
+}
+
+.contenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenu img {
+    width: 200px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.contenu p{
+    width: 350px;
+}
+.infos  {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.infos h2 {
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+.infos p {
+    line-height: 140%;
+}
+.infos button{
+    background: transparent;
+    border: 1px solid #222;
+    padding: 10px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    pointer-events: auto!important;
+}
+.infos button:active {
+    transform: scale(0.95);
+}
+
+
+
+    </style>
+</head>
+<body>
+    <section id="tarifs" class="rubrique">
+        <h1>    TARIFS</h1>
+        <main id="mainOf_Contact" class="rubrique_mainOf">
+    <!-- Á faire sur le modéle des films dans le choix de  netflix -->
+    <!-- consulter https://www.joshwcomeau.com/animation/css-transitions/ -->
+    <div class="container">
+
+        <div class="bloc active">
+          <div class="bloc-haut">
+            <div class="rond">
+              <img class="pastille" src="../pics/pastel.jpg" alt="">
+            </div>
+            <p class="titre-section"> CAPSULES</p>
+            <div class="ligne"></div>
+            <p class="prix">45€</p>
+          </div>
+          <div class="contenu">
+            <div class="infos">
+                  <h2>Pose de capsule</h2>
+                <ul>
+                    <li> Soins des cuticules</li>
+                    <li> Ponçage</li>
+                    <li> Choix des capsules</li>
+                    <li> Encollage</li>
+                    <li> Pose et façonnage des capsules</li>
+                </ul>
+    <!--  Possibilité de faire une function avec un tableau de message qui seront affichées selon ce qui est réservé -->
+ <button onclick='confirm("Prestation confirmée")'>Réserver</button>
+              </div>
+          </div>
+        </div>
+    <!--1 UNITÉ  -->
+        <div class="bloc">
+          <div class="bloc-haut">
+            <div class="rond">
+                <img class="pastille" src="../pics/remplissage_gel.webp">
+            </div>
+            <p class="titre-section">   Remplissage au Gel</p>
+            <div class="ligne"></div>
+            <p class="prix">55€</p>
+          </div>
+          <div class="contenu">
+              <div class="infos">
+                  <h2>Remplissage au gel</h2>
+                  <ul>
+                    <li> Soins des cuticules</li>
+                    <li> Grattage de la colle usagée</li>
+                    <li> Nettoyage</li>
+                    <li> Remplissage au gel</li>
+                    <li> Vernissage</li>
+                </ul>
+                <button onclick='confirm("Prestation confirmée")'>Réserver</button>
+              </div>
+          </div>
+        </div>
+    
+        <div class="bloc">
+          <div class="bloc-haut">
+            <div class="rond">
+            
+            </div>
+            <p class="titre-section">Tea</p>
+            <div class="ligne"></div>
+            <p class="prix">3</p>
+          </div>
+          <div class="contenu">
+              
+              <div class="infos">
+                  <h2>Bubble-Tea</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, et commodi earum eius ipsa, nulla molestiae iusto eligendi qui non nihil ab, rerum vel exercitationem.</p>
+                  <button>Add to order</button>
+              </div>
+          </div>
+        </div>
+    
+    
+    
+        <div class="bloc">
+          <div class="bloc-haut">
+            <div class="rond">
+            
+            </div>
+            <p class="titre-section">Maki</p>
+            <div class="ligne"></div>
+            <p class="prix">7</p>
+          </div>
+          <div class="contenu">
+              
+              <div class="infos">
+                  <h2>Maki</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, et commodi earum eius ipsa, nulla molestiae iusto eligendi qui non nihil ab, rerum vel exercitationem.</p>
+                  <button>Add to order</button>
+              </div>
+          </div>
+        </div>
+    
+        <div class="bloc">
+          <div class="bloc-haut">
+            <div class="rond">
+            
+            </div>
+            <p class="titre-section">Burrito</p>
+            <div class="ligne"></div>
+            <p class="prix">6</p>
+          </div>
+          <div class="contenu">
+              
+              <div class="infos">
+                  <h2>Burrito</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, et commodi earum eius ipsa, nulla molestiae iusto eligendi qui non nihil ab, rerum vel exercitationem.</p>
+                  <button>Add to order</button>
+              </div>
+          </div>
+        </div>
+       
+      </div>
+  
+      <p>   
+<button class="h_b">
+<a href="file:///C:/Users/langl/OneDrive/Documents/odp_2/odp_2.2/odp2.2_Index.html"><i class="fa-solid fa-house"></i></a>
+</button>
+<br/> <br/>
+    <button class="l_b">
+        <a href="../continu/prestations.html"> <i
+                class="fa-sharp fa-solid fa-arrow-left"></i> </a>
+    </button>
+    <button class="l_b">
+        <a href="../continu/contact.html"> <i
+                class="fa-sharp fa-solid fa-arrow-right"></i> </a>
+    </button>
+
+</p>
+
+</main>
+</section>
+
+<script>
+const allBlocs = document.querySelectorAll('.bloc');
+
+
+allBlocs.forEach(bloc => {
+    bloc.addEventListener('click', (e) => {
+
+        // console.log(e.target);
+        e.target.classList.add('active');
+
+        for(let i = 0; i < allBlocs.length; i++ ){
+            if(allBlocs[i] !== e.target){
+                allBlocs[i].classList.remove('active');
+            }
+        }
+        
+
+    })
+})
+
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+    })
+})
+
+
+
+
+</script>
+</body>
+</html>
